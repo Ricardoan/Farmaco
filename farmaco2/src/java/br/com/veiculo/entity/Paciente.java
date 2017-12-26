@@ -20,6 +20,7 @@ import javax.persistence.Table;
 @Table(name="Paciente")
 
 // comando de configuração do banco de dados
+
 public class Paciente implements Serializable{
     @Id 
     @GeneratedValue (strategy= GenerationType.AUTO)
@@ -117,6 +118,7 @@ public class Paciente implements Serializable{
     
    
     @Override
+    //Conexão com o banco
     public int hashCode() {
         int hash = 5;
         hash = 71 * hash + (this.id != null ? this.id.hashCode() : 0);

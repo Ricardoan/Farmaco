@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+    <h:head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Farmacovigilância</title>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <script type="text/javascript" src="js/script2.js">
+		</script>
+        
+    </h:head>
+    <h:body>
+   
+      <div id="geral_home">
+    
+    <div class="topo_home">
+    	<div class="topo_central">
+        <div class="topo_slogan">
+     	
+    	</div> <!-- fim topo_slogan -->
+        <div class="topo_busca">
+        	<div class="topo_busca2">
+            	 
+     		    <form action="" method="get" >
+     		      <input class="test5" name="palavra" type="text" value=""   />
+     		      <input class="buton" name="input" type="submit" value="buscar" />
+   		      </form>
+             
+			</div>
+    	</div> <!-- fim topo_busca -->
+    </div><!-- fim topo_central -->
+    </div> <!-- fim topo_home -->
+    
+    
+   
+  <div class="menu">
+ <p:breadCrumb>
+    <p:menuitem value="Cadastrar" url="cadastrar" />
+    <p:menuitem value="Sports" url="#" />
+    <p:menuitem value="Basketball" url="#" />
+ 
+   
+</p:breadCrumb>
+    </div> <!-- fim menu -->
+    
+  <div class="corpo">  
+   
+  <div class="caixa_texto">
+ <p:breadCrumb>
+    <p:menuitem value="Categories" url="#" />
+    <p:menuitem value="Cadastramento" url="http://localhost:8084/farmaco2/faces/cadastrar.xhtml" />
+    <p:menuitem value="Login" url="http://localhost:8084/farmaco2/faces/login.xhtml" />
+    <p:menuitem value="Produto" url="http://localhost:8084/farmaco2/faces/produto.xhtml" />
+    <p:menuitem value="Teams" url="#" />
+   
+  
+</p:breadCrumb>
+  	 
+  
+             <h:link outcome="cadastrar" value="Cadastramento"  /><p></p>
+                <h:link outcome="produto" value="Produto"  /><p></p>
+    
+  
+  </div>  <!-- fim caixa de texto -->
+ 
+ 
+
+  </div> <!-- fim corpo-->
+   <div class="rodape">
+    	<div class="rodape_central">
+   			<div class="rodape_slogan">
+  		 	
+            </div><!--fim rodape_slogan-->
+    	<div class="rodape_frase">
+  		 <ul>
+    		
+            <li><a href="index.html" class="active" >© Todos os direios reservados R.N</a></li>
+                </ul>
+    	</div><!-- rodape frase-->
+    	</div><!-- rodape central-->
+   </div> <!--fim rodape-->
+  
+    </div><!-- fim geral_home -->
+
+    </h:body>
+   </f:view>
+</html>  

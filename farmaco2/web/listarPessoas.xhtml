@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+    <body>
+        <h:form id="formulario2">
+                    <h:panelGrid>
+                 
+                         <p:panel header="LISTAGEM DE PESSOAS">
+                            <p:dataTable value="#{pessoasbean.listarPessoas()}" var = "pateta"  id ="tabela">
+                            <p:column>
+                                <f:facet name="header">
+                                ID
+                                </f:facet>
+                            <h:outputText value="#{pateta.id}"/>
+                             </p:column>                    
+                              <p:column>
+                            <f:facet name="header">
+                                NOME
+                            </f:facet>
+                            <h:outputText value="#{pateta.nome}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    EMAIL
+                                </f:facet>
+                                <h:outputText value="#{pateta.email}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    TELEFONE
+                                </f:facet>
+                                <h:outputText value="#{pateta.telefone}"/>
+                            </p:column>
+                                
+                                                     
+                                
+                             <p:column>
+                                <f:facet name="header">
+                                    AÇOES
+                                </f:facet>
+                                 <p:commandLink value="Remover" action="#{pessoasbean.removerPessoa(pateta)}"/>
+                             </p:column>
+                                
+                        </p:dataTable>
+                             
+                        </p:panel>
+                    </h:panelGrid>
+            <h:link outcome="index" value="Voltar para tela de cadastro"  />
+             </h:form>
+                      
+    </body>
+    </f:view>
+</html>

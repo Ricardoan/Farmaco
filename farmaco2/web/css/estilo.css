@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	font-family:"Century Ghotic";
+	font-size: 16px;/*tamanho da fonte*/
+	color:#999; /* Cor da fonte*/
+}
+
+
+#geral_home { /*Div maior*/
+	width:auto;/*largura total da página*/
+	height: 1300px; /*altura; altura anterior 970*/
+	margin: auto; /*a margem automatica centraliza a Div*/
+	color: #666;
+}
+
+
+
+.topo_home { /*Div do topo*/
+	width:100%;
+	height:81px;
+	background:url(../imagem/bannerdin.jpg); /*insere o banner do topo*/
+	
+	/*border-bottom:#E1C6CF solid 5px;
+	border-left:#E1C6CF solid 5px;
+	border-right:#E1C6CF solid 5px;*/ /*Bordas para o banner*/
+
+}
+
+.topo_central {
+	width:930px;
+	margin:auto;
+	height:80px;
+	
+}
+.topo_slogan {
+	width:225px;
+	height:25px;
+	background:url(../imagem/logotipo1.png);
+	top: 25px;
+	float:left;
+	position:relative;
+	
+}
+
+
+.topo_busca{/*Div fora da Div busca2 */
+	width:270px;
+	
+	height:55px;
+	float:right;
+	position:relative;
+	margin: 0 0 0 0
+}
+
+.topo_busca2{
+	width:260px; /* Tamanho da largura*/
+	
+	height:43px; /* Tamanho da altura o mais proximo dop text fild*/
+	float:right; /* flutuação a direita ou seja posiciona-se a direita da DIV pai*/
+	position:relative;
+	margin: 30px 0 0 0 /*posiciona a altura */
+}
+.menu {
+	width:930px;
+	margin:auto;
+	height:60px;
+	font-size:22px;
+	background:url(../imagem/menu.jpg);
+}
+
+.menu ul li { /*comando para estilizar o menu*/
+	position: relative;
+	display: inline; /*displey em linha*/
+	padding: 0 0 0 60px; /*espaçamento dos links emtre as palavras*/
+	top: 10px; /*margem do topo dos links*/
+	left: auto;
+	right: -110px; /*alinhamento para a direita dos links do menu*/
+		
+	
+}
+.menu ul li a {/*Ataque ao link*/
+	text-decoration: none; /*Tira a linha sublinhada*/
+	color: #FFF; /*cor do link*/
+	text-align: justify;
+	font-style: inherit;
+	font-weight: bold; /*fonte fica em negrito*/
+}
+
+
+.menu ul li a:hover{ /*ataca o link quando passa o mouse*/
+	text-decoration: underline;
+	color: #EBEBEB;
+		
+}
+
+
+/*corpo da página*/
+
+.corpo{ 
+	width:930px;
+      	margin:auto;
+	height:900px;
+	font-size:18px; /*tamanho da fonte*/
+	background:#F1F1C9;
+}
+
+.caixa_texto {
+	width:900px;
+	height: 800px;
+	/*float: left;*/ /*Posição a esquerda*/
+	  margin: auto; /*20 da parte superior; direita 0; embaixo 0; esquerda 20px; Margem referente a central*/
+	/*text-align: justify;
+	line-height: 20px; /*Distanciamente entre uma linha e outra*/
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #333;*/
+	background:#F1F1F8;
+}
+
+.caixa_texto h1 {
+	Font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 24px;
+	color: #0080FF;
+}
+
+.base_home {
+	width: 885px;
+	height:400px;
+	float:left;
+	margin:20px 0 0 25px;
+	position:relative;
+	background:#F4F4F4/*insere a cor de fundo da div base_home*/
+}
+
+/*Rodape da página*/
+.rodape { 
+	width:100%;
+	height:85px;
+	background:url(../imagem/Rodape.jpg); /* OBS: JAVA É CASE SENSITIVE insere o banner do topo*/
+	topo:25px;
+	
+}
+
+
+.rodape_central{
+	width:930px;
+	margin:auto;
+	height:84px;
+}
+.rodape_slogan{
+	width:225px;
+	height:25px;
+	background:url(../imagem/logotipo1.png);
+	top: 25px;
+	float:left;
+	position:relative;
+}
+
+
+.rodape_frase {
+	width:500px;
+	
+	height:77px;
+	float:left;
+	position:relative;
+}
+.rodape_frase ul li { /*comando para estilizar o menu*/
+	position:relative;
+	display: inline; /*displey em linha*/	
+	/*padding:0 0 0 60px;*/ /*espaçamento dos links emtre as palavras*/
+	top: 40px; /*margem do topo dos links*/
+	left:150px;
+	
+	margin:auto;
+	font-size:12px; /*tamanho da fonte*/
+	/*margin: 0px 300px 0 300px; /*20 da parte superior; direita 0; embaixo 0; esquerda 20px; Margem referente a central*/ 
+	font-weight: bold;
+}
+
+.rodape_frase ul li a {/*Ataque ao link*/
+	text-decoration: none; /*Tira a linha sublinhada*/
+	color: #FFF; /*cor do link*/
+	text-align: justify;
+	font-size: larger;
+}	
+
+.form-control{
+	 /* Imagem de fundo (Seta) */
+   background-position: 150px center;  /*Posição da imagem do background*/
+   width: 180px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+   height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+   border:1px solid #ddd;
+   /*background-color:#DAF2FC;*/
+   border-radius: 05px 05px 05px 05px;
+}
+

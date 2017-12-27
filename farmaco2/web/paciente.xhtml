@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+    <h:head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Farmacovigilância</title>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <script type="text/javascript" src="js/script2.js">
+		</script>
+        
+    </h:head>
+    <h:body>
+    <center>
+                 
+    <div id="geral_home">
+    
+    <div class="topo_home">
+    	<div class="topo_central">
+        <div class="topo_slogan">
+     	
+    	</div> <!-- fim topo_slogan -->
+        <div class="topo_busca">
+        	<div class="topo_busca2">
+            	 
+     		    <form action="" method="get" >
+     		      <input class="test5" name="palavra" type="text" value=""   />
+     		      <input class="buton" name="input" type="submit" value="buscar" />
+   		      </form>
+             
+			</div>
+    	</div> <!-- fim topo_busca -->
+    </div><!-- fim topo_central -->
+    </div> <!-- fim topo_home -->
+    
+    
+   
+  <div class="menu">
+    	<ul>
+        	
+            <li><a href="comprar.html" class="active" >Login</a></li>
+            <li><a href="cadastrar2.xhtml" class="active" >Cadastrar</a></li>
+            <li><a href="produto.xhtml" class="active" >Produto</a></li>
+            <li><a href="contato.html" class="active" >Contato</a></li>
+            <li><a href="login.xhtml" class="active" >Entrar</a></li>
+            
+    	</ul>
+    </div> <!-- fim menu -->
+    
+  <div class="corpo">  
+   
+  <div class="caixa_texto">
+  
+  	 
+  
+  	<h:form id="formulario">
+                    <h:panelGrid>
+                       
+                          <p:panel header="CADASTRAR PESSOAS">
+                            <h:panelGrid columns="2">
+                                
+                                NOME: <p:inputText id="nome" value="#{pacientebeans.paciente.nome}"/>                                                         
+                                COR: <p:inputText id="paciente" value="#{pacientebeans.paciente.cor}"/>                                                                
+                                ENFERMARIA: <p:inputText id="enfermaria" value="#{pacientebeans.paciente.enfermaria}"/> 
+                                IDADE: <p:inputText id="idade" value="#{pacientebeans.paciente.idade}"/>
+                                OBITIDO PELA RAM: <p:inputText id="obitido" value="#{pacientebeans.paciente.obitoPelaRam}"/>
+                                OBITIDO POR OUTRAS CAUSAS: <p:inputText id="outras" value="#{pacientebeans.paciente.obitoPorOutrasCausas}"/> 
+                                PESO:  <p:inputText id="peso" value="#{pacientebeans.paciente.peso}"/> 
+                                PRONTUARIO: <p:inputText id="pronturario" value="#{pacientebeans.paciente.prontuario}"/> 
+                                SEXO:  <p:inputText id="sexo" value="#{pacientebeans.paciente.sexo}"/> 
+                                
+                               
+                                <p:commandButton value="Cadastrar" ajax = "false" action="#{pacientebeans.adicionarPaciente()}"/>                        
+                                
+                                
+                                <f:param name="productId" value="10" />
+                                
+                            </h:panelGrid>
+                            <br />
+                             
+                            <p:link outcome="index" value="Voltar para tela inicial"  />
+                         </p:panel>  
+                         
+                        
+                    </h:panelGrid>
+                    
+                </h:form>
+    
+ 
+  </div>  <!-- fim caixa de texto -->
+ 
+
+
+  </div> <!-- fim corpo-->
+   <div class="rodape">
+    	<div class="rodape_central">
+   			<div class="rodape_slogan">
+  		 	
+            </div><!--fim rodape_slogan-->
+    	<div class="rodape_frase">
+  		 <ul>
+    		
+            <li><a href="index.html" class="active" >© Todos os direios reservados R.N</a></li>
+                </ul>
+    	</div><!-- rodape frase-->
+    	</div><!-- rodape central-->
+   </div> <!--fim rodape-->
+  
+    </div><!-- fim geral_home -->
+      </center>
+
+  </h:body>
+   </f:view>
+</html>  
